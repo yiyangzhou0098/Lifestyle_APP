@@ -24,7 +24,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-661" y="0.0"/>
+            <point key="canvasLocation" x="-1062" y="12"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="yBc-Br-YDu">
@@ -230,10 +230,10 @@
             </objects>
             <point key="canvasLocation" x="815" y="-1617"/>
         </scene>
-        <!--View Controller-->
+        <!--PostVC-->
         <scene sceneID="Yst-ig-mKL">
             <objects>
-                <viewController id="ipP-6V-npc" sceneMemberID="viewController">
+                <viewController id="ipP-6V-npc" customClass="PostVC" customModule="LifestyleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Kr-K0-dBa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -262,10 +262,10 @@
             </objects>
             <point key="canvasLocation" x="816" y="345"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab BarC-->
         <scene sceneID="jEQ-rq-rU8">
             <objects>
-                <tabBarController id="NSh-nl-Vuy" sceneMemberID="viewController">
+                <tabBarController id="NSh-nl-Vuy" customClass="TabBarC" customModule="LifestyleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sfM-fy-ggg">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

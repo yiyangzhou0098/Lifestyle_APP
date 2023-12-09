@@ -8,5 +8,6 @@ target 'LifestyleApp' do
   # Pods for LifestyleApp
   pod 'XLPagerTabStrip', '~> 9.0'
   pod 'CHTCollectionViewWaterfallLayout/Swift'
+  pod 'YPImagePicker'
 
 end

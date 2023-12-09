@@ -2,6 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Open to allow saving photos</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Open to allow recording sounds</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Open to allow selecing photos in library</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Open to allow taking photos or videos</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
