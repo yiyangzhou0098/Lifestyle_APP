@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4EF0C2AE751CE9BF4F0C6A9F /* Pods_LifestyleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6189605DE1603E74759A3352 /* Pods_LifestyleApp.framework */; };
 		5745B8802B2018FB007A8EE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5745B87F2B2018FB007A8EE3 /* AppDelegate.swift */; };
 		5745B8822B2018FB007A8EE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5745B8812B2018FB007A8EE3 /* SceneDelegate.swift */; };
 		5745B8842B2018FB007A8EE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5745B8832B2018FB007A8EE3 /* ViewController.swift */; };
@@ -14,9 +15,17 @@
 		5745B88A2B2018FB007A8EE3 /* LifestyleApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5745B8882B2018FB007A8EE3 /* LifestyleApp.xcdatamodeld */; };
 		5745B88C2B2018FC007A8EE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5745B88B2B2018FC007A8EE3 /* Assets.xcassets */; };
 		5745B88F2B2018FC007A8EE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5745B88D2B2018FC007A8EE3 /* LaunchScreen.storyboard */; };
+		5745B8972B219883007A8EE3 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5745B8962B219883007A8EE3 /* HomeVC.swift */; };
+		5745B8992B21A31C007A8EE3 /* FollowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5745B8982B21A31C007A8EE3 /* FollowVC.swift */; };
+		5745B89B2B21A32F007A8EE3 /* DiscoveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5745B89A2B21A32F007A8EE3 /* DiscoveryVC.swift */; };
+		5745B89D2B21A345007A8EE3 /* NearByVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5745B89C2B21A345007A8EE3 /* NearByVC.swift */; };
+		5745B89F2B229D43007A8EE3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5745B89E2B229D43007A8EE3 /* Constants.swift */; };
+		5745B8A32B22ED21007A8EE3 /* WaterfallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5745B8A22B22ED21007A8EE3 /* WaterfallVC.swift */; };
+		5745B8A52B22F306007A8EE3 /* WaterfallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5745B8A42B22F306007A8EE3 /* WaterfallCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52E09B5D123225E132E299DB /* Pods-LifestyleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifestyleApp.debug.xcconfig"; path = "Target Support Files/Pods-LifestyleApp/Pods-LifestyleApp.debug.xcconfig"; sourceTree = "<group>"; };
 		5745B87C2B2018FB007A8EE3 /* LifestyleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifestyleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5745B87F2B2018FB007A8EE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5745B8812B2018FB007A8EE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +35,15 @@
 		5745B88B2B2018FC007A8EE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5745B88E2B2018FC007A8EE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5745B8902B2018FC007A8EE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5745B8962B219883007A8EE3 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		5745B8982B21A31C007A8EE3 /* FollowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowVC.swift; sourceTree = "<group>"; };
+		5745B89A2B21A32F007A8EE3 /* DiscoveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryVC.swift; sourceTree = "<group>"; };
+		5745B89C2B21A345007A8EE3 /* NearByVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByVC.swift; sourceTree = "<group>"; };
+		5745B89E2B229D43007A8EE3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5745B8A22B22ED21007A8EE3 /* WaterfallVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallVC.swift; sourceTree = "<group>"; };
+		5745B8A42B22F306007A8EE3 /* WaterfallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallCell.swift; sourceTree = "<group>"; };
+		6189605DE1603E74759A3352 /* Pods_LifestyleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifestyleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B08B328704528581F670892 /* Pods-LifestyleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifestyleApp.release.xcconfig"; path = "Target Support Files/Pods-LifestyleApp/Pods-LifestyleApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +51,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EF0C2AE751CE9BF4F0C6A9F /* Pods_LifestyleApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		572309382B23FEEF00AA92D1 /* Waterfall */ = {
+			isa = PBXGroup;
+			children = (
+				5745B8A22B22ED21007A8EE3 /* WaterfallVC.swift */,
+				5745B8A42B22F306007A8EE3 /* WaterfallCell.swift */,
+			);
+			path = Waterfall;
+			sourceTree = "<group>";
+		};
+		572309392B23FF0200AA92D1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5745B89E2B229D43007A8EE3 /* Constants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		5745B8732B2018FB007A8EE3 = {
 			isa = PBXGroup;
 			children = (
 				5745B87E2B2018FB007A8EE3 /* LifestyleApp */,
 				5745B87D2B2018FB007A8EE3 /* Products */,
+				E0F7295FA7593985866B53C2 /* Pods */,
+				A9994341F4D357FC4F51463D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,12 +100,43 @@
 				5745B8812B2018FB007A8EE3 /* SceneDelegate.swift */,
 				5745B8832B2018FB007A8EE3 /* ViewController.swift */,
 				5745B8852B2018FB007A8EE3 /* Main.storyboard */,
-				5745B88B2B2018FC007A8EE3 /* Assets.xcassets */,
+				572309382B23FEEF00AA92D1 /* Waterfall */,
+				5745B8A02B229F5D007A8EE3 /* Home */,
+				572309392B23FF0200AA92D1 /* Common */,
 				5745B88D2B2018FC007A8EE3 /* LaunchScreen.storyboard */,
+				5745B88B2B2018FC007A8EE3 /* Assets.xcassets */,
 				5745B8902B2018FC007A8EE3 /* Info.plist */,
 				5745B8882B2018FB007A8EE3 /* LifestyleApp.xcdatamodeld */,
 			);
 			path = LifestyleApp;
+			sourceTree = "<group>";
+		};
+		5745B8A02B229F5D007A8EE3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5745B8982B21A31C007A8EE3 /* FollowVC.swift */,
+				5745B89A2B21A32F007A8EE3 /* DiscoveryVC.swift */,
+				5745B89C2B21A345007A8EE3 /* NearByVC.swift */,
+				5745B8962B219883007A8EE3 /* HomeVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A9994341F4D357FC4F51463D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6189605DE1603E74759A3352 /* Pods_LifestyleApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0F7295FA7593985866B53C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				52E09B5D123225E132E299DB /* Pods-LifestyleApp.debug.xcconfig */,
+				9B08B328704528581F670892 /* Pods-LifestyleApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +146,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5745B8932B2018FC007A8EE3 /* Build configuration list for PBXNativeTarget "LifestyleApp" */;
 			buildPhases = (
+				B5979957E319D0CA0F5FE6A8 /* [CP] Check Pods Manifest.lock */,
 				5745B8782B2018FB007A8EE3 /* Sources */,
 				5745B8792B2018FB007A8EE3 /* Frameworks */,
 				5745B87A2B2018FB007A8EE3 /* Resources */,
+				EA7EF98C0A22A5A34549FAB5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,15 +207,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B5979957E319D0CA0F5FE6A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LifestyleApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA7EF98C0A22A5A34549FAB5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LifestyleApp/Pods-LifestyleApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LifestyleApp/Pods-LifestyleApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LifestyleApp/Pods-LifestyleApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5745B8782B2018FB007A8EE3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5745B8842B2018FB007A8EE3 /* ViewController.swift in Sources */,
+				5745B8992B21A31C007A8EE3 /* FollowVC.swift in Sources */,
+				5745B8A52B22F306007A8EE3 /* WaterfallCell.swift in Sources */,
+				5745B8972B219883007A8EE3 /* HomeVC.swift in Sources */,
+				5745B89D2B21A345007A8EE3 /* NearByVC.swift in Sources */,
 				5745B8802B2018FB007A8EE3 /* AppDelegate.swift in Sources */,
+				5745B89B2B21A32F007A8EE3 /* DiscoveryVC.swift in Sources */,
 				5745B8822B2018FB007A8EE3 /* SceneDelegate.swift in Sources */,
 				5745B88A2B2018FB007A8EE3 /* LifestyleApp.xcdatamodeld in Sources */,
+				5745B8A32B22ED21007A8EE3 /* WaterfallVC.swift in Sources */,
+				5745B89F2B229D43007A8EE3 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +406,7 @@
 		};
 		5745B8942B2018FC007A8EE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52E09B5D123225E132E299DB /* Pods-LifestyleApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,11 +415,12 @@
 				DEVELOPMENT_TEAM = CX6B7U34AF;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LifestyleApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LifeYou;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,14 +428,18 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = I6350.LifestyleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		5745B8952B2018FC007A8EE3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B08B328704528581F670892 /* Pods-LifestyleApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -322,11 +448,12 @@
 				DEVELOPMENT_TEAM = CX6B7U34AF;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LifestyleApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LifeYou;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,9 +461,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = I6350.LifestyleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
