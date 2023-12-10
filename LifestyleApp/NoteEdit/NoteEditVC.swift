@@ -85,7 +85,7 @@ extension NoteEditVC {
             }
             present(picker, animated: true)
         } else {
-            MBProgressHUD.showAdded(to: view, animated: true)
+            self.showTextHUD("Only can select \(kMaxPhotoCount) pictures")
         }
     }
 }
