@@ -11,6 +11,8 @@
 		5723093B2B24004D00AA92D1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5723093A2B24004D00AA92D1 /* README.md */; };
 		5723093D2B240D0500AA92D1 /* TabBarC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5723093C2B240D0500AA92D1 /* TabBarC.swift */; };
 		5723093F2B2410DD00AA92D1 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5723093E2B2410DD00AA92D1 /* PostVC.swift */; };
+		572309412B25397D00AA92D1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572309402B25397D00AA92D1 /* Extensions.swift */; };
+		572309432B254CF000AA92D1 /* NoteEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572309422B254CF000AA92D1 /* NoteEditVC.swift */; };
 		5745B8802B2018FB007A8EE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5745B87F2B2018FB007A8EE3 /* AppDelegate.swift */; };
 		5745B8822B2018FB007A8EE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5745B8812B2018FB007A8EE3 /* SceneDelegate.swift */; };
 		5745B8842B2018FB007A8EE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5745B8832B2018FB007A8EE3 /* ViewController.swift */; };
@@ -25,6 +27,8 @@
 		5745B89F2B229D43007A8EE3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5745B89E2B229D43007A8EE3 /* Constants.swift */; };
 		5745B8A32B22ED21007A8EE3 /* WaterfallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5745B8A22B22ED21007A8EE3 /* WaterfallVC.swift */; };
 		5745B8A52B22F306007A8EE3 /* WaterfallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5745B8A42B22F306007A8EE3 /* WaterfallCell.swift */; };
+		579CA8F92B255EF200B84981 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579CA8F82B255EF200B84981 /* PhotoCell.swift */; };
+		579CA8FB2B257C9100B84981 /* PhotoFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579CA8FA2B257C9100B84981 /* PhotoFooter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,8 @@
 		5723093A2B24004D00AA92D1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5723093C2B240D0500AA92D1 /* TabBarC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarC.swift; sourceTree = "<group>"; };
 		5723093E2B2410DD00AA92D1 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
+		572309402B25397D00AA92D1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		572309422B254CF000AA92D1 /* NoteEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEditVC.swift; sourceTree = "<group>"; };
 		5745B87C2B2018FB007A8EE3 /* LifestyleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifestyleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5745B87F2B2018FB007A8EE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5745B8812B2018FB007A8EE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +54,9 @@
 		5745B89E2B229D43007A8EE3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5745B8A22B22ED21007A8EE3 /* WaterfallVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallVC.swift; sourceTree = "<group>"; };
 		5745B8A42B22F306007A8EE3 /* WaterfallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallCell.swift; sourceTree = "<group>"; };
+		579CA8F82B255EF200B84981 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		579CA8FA2B257C9100B84981 /* PhotoFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFooter.swift; sourceTree = "<group>"; };
+		579CA8FD2B26686600B84981 /* LittlePink-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LittlePink-Bridging-Header.h"; sourceTree = "<group>"; };
 		6189605DE1603E74759A3352 /* Pods_LifestyleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifestyleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B08B328704528581F670892 /* Pods-LifestyleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifestyleApp.release.xcconfig"; path = "Target Support Files/Pods-LifestyleApp/Pods-LifestyleApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				5745B89E2B229D43007A8EE3 /* Constants.swift */,
+				572309402B25397D00AA92D1 /* Extensions.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -109,6 +119,7 @@
 				5745B8852B2018FB007A8EE3 /* Main.storyboard */,
 				5723093C2B240D0500AA92D1 /* TabBarC.swift */,
 				5723093E2B2410DD00AA92D1 /* PostVC.swift */,
+				579CA8FC2B25824400B84981 /* NoteEdit */,
 				572309382B23FEEF00AA92D1 /* Waterfall */,
 				5745B8A02B229F5D007A8EE3 /* Home */,
 				572309392B23FF0200AA92D1 /* Common */,
@@ -116,6 +127,7 @@
 				5745B88B2B2018FC007A8EE3 /* Assets.xcassets */,
 				5745B8902B2018FC007A8EE3 /* Info.plist */,
 				5745B8882B2018FB007A8EE3 /* LifestyleApp.xcdatamodeld */,
+				579CA8FD2B26686600B84981 /* LittlePink-Bridging-Header.h */,
 			);
 			path = LifestyleApp;
 			sourceTree = "<group>";
@@ -129,6 +141,16 @@
 				5745B8962B219883007A8EE3 /* HomeVC.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		579CA8FC2B25824400B84981 /* NoteEdit */ = {
+			isa = PBXGroup;
+			children = (
+				572309422B254CF000AA92D1 /* NoteEditVC.swift */,
+				579CA8F82B255EF200B84981 /* PhotoCell.swift */,
+				579CA8FA2B257C9100B84981 /* PhotoFooter.swift */,
+			);
+			path = NoteEdit;
 			sourceTree = "<group>";
 		};
 		A9994341F4D357FC4F51463D /* Frameworks */ = {
@@ -264,8 +286,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				579CA8FB2B257C9100B84981 /* PhotoFooter.swift in Sources */,
 				5723093F2B2410DD00AA92D1 /* PostVC.swift in Sources */,
 				5745B8842B2018FB007A8EE3 /* ViewController.swift in Sources */,
+				572309432B254CF000AA92D1 /* NoteEditVC.swift in Sources */,
 				5745B8992B21A31C007A8EE3 /* FollowVC.swift in Sources */,
 				5745B8A52B22F306007A8EE3 /* WaterfallCell.swift in Sources */,
 				5745B8972B219883007A8EE3 /* HomeVC.swift in Sources */,
@@ -273,10 +297,12 @@
 				5745B8802B2018FB007A8EE3 /* AppDelegate.swift in Sources */,
 				5745B89B2B21A32F007A8EE3 /* DiscoveryVC.swift in Sources */,
 				5723093D2B240D0500AA92D1 /* TabBarC.swift in Sources */,
+				579CA8F92B255EF200B84981 /* PhotoCell.swift in Sources */,
 				5745B8822B2018FB007A8EE3 /* SceneDelegate.swift in Sources */,
 				5745B88A2B2018FB007A8EE3 /* LifestyleApp.xcdatamodeld in Sources */,
 				5745B8A32B22ED21007A8EE3 /* WaterfallVC.swift in Sources */,
 				5745B89F2B229D43007A8EE3 /* Constants.swift in Sources */,
+				572309412B25397D00AA92D1 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +470,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "LifestyleApp/LittlePink-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -477,6 +504,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "LifestyleApp/LittlePink-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
