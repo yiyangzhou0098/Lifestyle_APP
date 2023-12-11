@@ -30,6 +30,11 @@
 		579CA8F92B255EF200B84981 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579CA8F82B255EF200B84981 /* PhotoCell.swift */; };
 		579CA8FB2B257C9100B84981 /* PhotoFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579CA8FA2B257C9100B84981 /* PhotoFooter.swift */; };
 		579CA8FF2B26B33700B84981 /* NoteEdit-DrapDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579CA8FE2B26B33700B84981 /* NoteEdit-DrapDrop.swift */; };
+		579CA9012B26C25B00B84981 /* NoteEditVC-CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579CA9002B26C25B00B84981 /* NoteEditVC-CollectionView.swift */; };
+		579CA9032B26DB6200B84981 /* NoteEditVC-Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579CA9022B26DB6200B84981 /* NoteEditVC-Config.swift */; };
+		579CA9052B27B3D100B84981 /* TODO.txt in Resources */ = {isa = PBXBuildFile; fileRef = 579CA9042B27B3D100B84981 /* TODO.txt */; };
+		579CA9072B27BF7600B84981 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579CA9062B27BF7600B84981 /* ChannelVC.swift */; };
+		579CA9092B27CC4000B84981 /* ChannelTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579CA9082B27CC4000B84981 /* ChannelTableVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +64,11 @@
 		579CA8FA2B257C9100B84981 /* PhotoFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFooter.swift; sourceTree = "<group>"; };
 		579CA8FD2B26686600B84981 /* LittlePink-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LittlePink-Bridging-Header.h"; sourceTree = "<group>"; };
 		579CA8FE2B26B33700B84981 /* NoteEdit-DrapDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEdit-DrapDrop.swift"; sourceTree = "<group>"; };
+		579CA9002B26C25B00B84981 /* NoteEditVC-CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-CollectionView.swift"; sourceTree = "<group>"; };
+		579CA9022B26DB6200B84981 /* NoteEditVC-Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-Config.swift"; sourceTree = "<group>"; };
+		579CA9042B27B3D100B84981 /* TODO.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = TODO.txt; sourceTree = "<group>"; };
+		579CA9062B27BF7600B84981 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		579CA9082B27CC4000B84981 /* ChannelTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelTableVC.swift; sourceTree = "<group>"; };
 		6189605DE1603E74759A3352 /* Pods_LifestyleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifestyleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B08B328704528581F670892 /* Pods-LifestyleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifestyleApp.release.xcconfig"; path = "Target Support Files/Pods-LifestyleApp/Pods-LifestyleApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				5723093A2B24004D00AA92D1 /* README.md */,
+				579CA9042B27B3D100B84981 /* TODO.txt */,
 				5745B87E2B2018FB007A8EE3 /* LifestyleApp */,
 				5745B87D2B2018FB007A8EE3 /* Products */,
 				E0F7295FA7593985866B53C2 /* Pods */,
@@ -149,9 +160,13 @@
 			isa = PBXGroup;
 			children = (
 				572309422B254CF000AA92D1 /* NoteEditVC.swift */,
+				579CA9022B26DB6200B84981 /* NoteEditVC-Config.swift */,
+				579CA9002B26C25B00B84981 /* NoteEditVC-CollectionView.swift */,
 				579CA8FE2B26B33700B84981 /* NoteEdit-DrapDrop.swift */,
 				579CA8F82B255EF200B84981 /* PhotoCell.swift */,
 				579CA8FA2B257C9100B84981 /* PhotoFooter.swift */,
+				579CA9062B27BF7600B84981 /* ChannelVC.swift */,
+				579CA9082B27CC4000B84981 /* ChannelTableVC.swift */,
 			);
 			path = NoteEdit;
 			sourceTree = "<group>";
@@ -233,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				579CA9052B27B3D100B84981 /* TODO.txt in Resources */,
 				5745B88F2B2018FC007A8EE3 /* LaunchScreen.storyboard in Resources */,
 				5745B88C2B2018FC007A8EE3 /* Assets.xcassets in Resources */,
 				5723093B2B24004D00AA92D1 /* README.md in Resources */,
@@ -302,9 +318,13 @@
 				5745B89B2B21A32F007A8EE3 /* DiscoveryVC.swift in Sources */,
 				5723093D2B240D0500AA92D1 /* TabBarC.swift in Sources */,
 				579CA8F92B255EF200B84981 /* PhotoCell.swift in Sources */,
+				579CA9072B27BF7600B84981 /* ChannelVC.swift in Sources */,
+				579CA9012B26C25B00B84981 /* NoteEditVC-CollectionView.swift in Sources */,
+				579CA9032B26DB6200B84981 /* NoteEditVC-Config.swift in Sources */,
 				5745B8822B2018FB007A8EE3 /* SceneDelegate.swift in Sources */,
 				5745B88A2B2018FB007A8EE3 /* LifestyleApp.xcdatamodeld in Sources */,
 				5745B8A32B22ED21007A8EE3 /* WaterfallVC.swift in Sources */,
+				579CA9092B27CC4000B84981 /* ChannelTableVC.swift in Sources */,
 				5745B89F2B229D43007A8EE3 /* Constants.swift in Sources */,
 				572309412B25397D00AA92D1 /* Extensions.swift in Sources */,
 			);

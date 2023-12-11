@@ -30,4 +30,18 @@ extension UIViewController {
         hub.detailsLabel.text = subTitle
         hub.hide(animated: true, afterDelay: 1)
     }
+    
+    // Mark: Textfield related
+    func hideKeyBoardWhenTapperAround() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}
+
+extension UITextField {
+    var unwrappedText: String { text ?? ""}
 }

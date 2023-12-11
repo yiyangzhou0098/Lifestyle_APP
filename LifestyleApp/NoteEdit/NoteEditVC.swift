@@ -5,14 +5,16 @@
 //  Created by ZYY on 12/9/23.
 //
 
+import Foundation
 import UIKit
-import YPImagePicker
-import MBProgressHUD
-import SKPhotoBrowser
-import AVKit
+
 
 class NoteEditVC: UIViewController {
-        
+    
+    @IBOutlet weak var titleCountLabel: UILabel!
+    @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var titleTextField: UITextField!
+    
     var photos = [UIImage(named: "1")!, UIImage(named: "2")!]
     var videoURL: URL?
     
@@ -23,107 +25,35 @@ class NoteEditVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        photoCollectionView.dragInteractionEnabled = true
+        config()
     }
-}
 
-extension NoteEditVC: UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        photos.count
+    // MARK: - Textfield
+    @IBAction func TFEditBegin(_ sender: Any) {
+        titleCountLabel.isHidden = false
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kPhotoCellID, for: indexPath) as! PhotoCell
-        
-        cell.imageView.image = photos[indexPath.item]
-                
-        return cell
+    @IBAction func TFEditEnd(_ sender: Any) {
+        titleCountLabel.isHidden = true
     }
     
-    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+    @IBAction func TFEndOnExit(_ sender: Any) {
+    }
+    
+    
+    @IBAction func TFEditChanged(_ sender: Any) {
+        titleCountLabel.text = String(100 - titleTextField.unwrappedText.count)
+    }
+}
+
+extension NoteEditVC: UITextFieldDelegate{
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
-        switch kind {
-        case UICollectionView.elementKindSectionFooter:
-            let photoFooter = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kPhotoFooterID, for: indexPath) as! PhotoFooter
-            
-            photoFooter.addPhotoBtn.addTarget(self, action: #selector(addPhoto), for: .touchUpInside)
-            
-            return photoFooter
-        default:
-            fatalError("Footer of collectionView failed")
+        // MARK: ensure textfield text (regular input/paste input) will not be longer than 100 chars
+        let isExceed = range.location >= 100 || (string.count + textField.unwrappedText.count) > 100
+        if isExceed {
+            showTextHUD("Exceed maximum characters")
         }
-    }
-}
-
-//MARK: listen
-extension NoteEditVC {
-    @objc private func addPhoto(sender: UIButton) {
-        if photoCount < kMaxPhotoCount {
-            // MARK: picker configurate
-            var config = YPImagePickerConfiguration()
-            config.albumName = "Lifeyou Album"
-            config.startOnScreen = .library
-            config.screens = [.library]
-            
-            // MARK: library configuration
-            config.library.defaultMultipleSelection = true
-            config.library.maxNumberOfItems = kMaxPhotoCount - photoCount
-            config.library.numberOfItemsInRow = 4
-            config.library.spacingBetweenItems = kSpacingBetweenItems
-            config.gallery.hidesRemoveButton = false
-            
-            // MARK: video configuration
-            
-            let picker = YPImagePicker(configuration: config)
-            picker.didFinishPicking {[unowned picker] items, _ in
-                    
-                for item in items {
-                    if case let .photo(photo) = item {
-                        self.photos.append(photo.image)
-                    }
-                }
-                self.photoCollectionView.reloadData()
-                    
-                picker.dismiss(animated: true)
-            }
-            present(picker, animated: true)
-        } else {
-            self.showTextHUD("Only can select \(kMaxPhotoCount) pictures")
-        }
-    }
-}
-  
-extension NoteEditVC: UICollectionViewDelegate {
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if isVideo {
-            let playerVC = AVPlayerViewController()
-//            playerVC.player = AVPlayer(url: videoURL)
-//            present(playerVC, animated: true) {
-//                playerVC.player?.play()
-//            }
-        } else {
-            var images = [SKPhoto]()
-            
-            for photo in photos {
-                images.append(SKPhoto.photoWithImage(photo))
-            }
-            
-            let browser = SKPhotoBrowser(photos: images, initialPageIndex: indexPath.item)
-            browser.delegate = self
-            SKPhotoBrowserOptions.displayAction = false
-            SKPhotoBrowserOptions.displayDeleteButton = true
-            
-            present(browser, animated: true, completion: {})
-        }
-
-    }
-}
-
-// MARK: SKphotoBroswer delegate
-extension NoteEditVC: SKPhotoBrowserDelegate {
-    func removePhoto(_ browser: SKPhotoBrowser, index: Int, reload: @escaping (() -> Void)) {
-        photos.remove(at: index)
-        photoCollectionView.reloadData()
-        reload()
+        return !isExceed
     }
 }
