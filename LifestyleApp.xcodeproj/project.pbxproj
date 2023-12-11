@@ -29,6 +29,7 @@
 		5745B8A52B22F306007A8EE3 /* WaterfallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5745B8A42B22F306007A8EE3 /* WaterfallCell.swift */; };
 		579CA8F92B255EF200B84981 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579CA8F82B255EF200B84981 /* PhotoCell.swift */; };
 		579CA8FB2B257C9100B84981 /* PhotoFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579CA8FA2B257C9100B84981 /* PhotoFooter.swift */; };
+		579CA8FF2B26B33700B84981 /* NoteEdit-DrapDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579CA8FE2B26B33700B84981 /* NoteEdit-DrapDrop.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		579CA8F82B255EF200B84981 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		579CA8FA2B257C9100B84981 /* PhotoFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFooter.swift; sourceTree = "<group>"; };
 		579CA8FD2B26686600B84981 /* LittlePink-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LittlePink-Bridging-Header.h"; sourceTree = "<group>"; };
+		579CA8FE2B26B33700B84981 /* NoteEdit-DrapDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEdit-DrapDrop.swift"; sourceTree = "<group>"; };
 		6189605DE1603E74759A3352 /* Pods_LifestyleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifestyleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B08B328704528581F670892 /* Pods-LifestyleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifestyleApp.release.xcconfig"; path = "Target Support Files/Pods-LifestyleApp/Pods-LifestyleApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				572309422B254CF000AA92D1 /* NoteEditVC.swift */,
+				579CA8FE2B26B33700B84981 /* NoteEdit-DrapDrop.swift */,
 				579CA8F82B255EF200B84981 /* PhotoCell.swift */,
 				579CA8FA2B257C9100B84981 /* PhotoFooter.swift */,
 			);
@@ -287,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				579CA8FB2B257C9100B84981 /* PhotoFooter.swift in Sources */,
+				579CA8FF2B26B33700B84981 /* NoteEdit-DrapDrop.swift in Sources */,
 				5723093F2B2410DD00AA92D1 /* PostVC.swift in Sources */,
 				5745B8842B2018FB007A8EE3 /* ViewController.swift in Sources */,
 				572309432B254CF000AA92D1 /* NoteEditVC.swift in Sources */,
