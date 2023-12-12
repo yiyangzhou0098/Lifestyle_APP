@@ -47,3 +47,16 @@ let kChannels = ["For you", "Trip", "Fun", "Creative", "Cook", "Pet", "Indoor"]
 let kMaxCameraZoomFactor: CGFloat = 3
 let kMaxPhotoCount = 6
 let kSpacingBetweenItems: CGFloat = 2
+
+
+
+let kAllSubChannels = [
+    ["a", "b", "b", "d"],
+    ["e", "f", "g"],
+    ["h", "i"],
+    ["j", "k", "l", "m", "n"],
+    ["o", "p"],
+    ["q", "r"],
+    ["s", "t"], 
+    ["u", "v", "w"]
+]
