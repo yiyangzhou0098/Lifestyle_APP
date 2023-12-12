@@ -44,6 +44,18 @@ class NoteEditVC: UIViewController {
     @IBAction func TFEditChanged(_ sender: Any) {
         titleCountLabel.text = String(100 - titleTextField.unwrappedText.count)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let channelVC = segue.destination as? ChannelVC {
+            channelVC.PVDelegate = self
+        }
+    }
+}
+
+extension NoteEditVC: ChannelVCDelegate {
+    func updateChannel(channel: String, subChannel: String) {
+        print("\(subChannel)")
+    }
 }
 
 extension NoteEditVC: UITextFieldDelegate{

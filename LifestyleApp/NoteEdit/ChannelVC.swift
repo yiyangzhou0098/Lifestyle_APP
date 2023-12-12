@@ -9,6 +9,8 @@ import UIKit
 import XLPagerTabStrip
 
 class ChannelVC: ButtonBarPagerTabStripViewController {
+    
+    var PVDelegate: ChannelVCDelegate?
 
     override func viewDidLoad() {
         settings.style.selectedBarBackgroundColor = UIColor(named: "main1")!

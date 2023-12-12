@@ -30,6 +30,13 @@ class ChannelTableVC: UITableViewController {
         cell.textLabel?.font = .systemFont(ofSize: 15)
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let channelVC = parent as! ChannelVC
+        channelVC.PVDelegate?.updateChannel(channel: channel, subChannel: subChannels[indexPath.row])
+        
+        dismiss(animated: true)
+    }
 
 }
 

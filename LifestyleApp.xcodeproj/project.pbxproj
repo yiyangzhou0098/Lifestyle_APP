@@ -35,6 +35,7 @@
 		579CA9052B27B3D100B84981 /* TODO.txt in Resources */ = {isa = PBXBuildFile; fileRef = 579CA9042B27B3D100B84981 /* TODO.txt */; };
 		579CA9072B27BF7600B84981 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579CA9062B27BF7600B84981 /* ChannelVC.swift */; };
 		579CA9092B27CC4000B84981 /* ChannelTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579CA9082B27CC4000B84981 /* ChannelTableVC.swift */; };
+		579CA90B2B27F14C00B84981 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579CA90A2B27F14C00B84981 /* Protocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		579CA9042B27B3D100B84981 /* TODO.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = TODO.txt; sourceTree = "<group>"; };
 		579CA9062B27BF7600B84981 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		579CA9082B27CC4000B84981 /* ChannelTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelTableVC.swift; sourceTree = "<group>"; };
+		579CA90A2B27F14C00B84981 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		6189605DE1603E74759A3352 /* Pods_LifestyleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifestyleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B08B328704528581F670892 /* Pods-LifestyleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifestyleApp.release.xcconfig"; path = "Target Support Files/Pods-LifestyleApp/Pods-LifestyleApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,6 +101,7 @@
 			children = (
 				5745B89E2B229D43007A8EE3 /* Constants.swift */,
 				572309402B25397D00AA92D1 /* Extensions.swift */,
+				579CA90A2B27F14C00B84981 /* Protocols.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				579CA8FB2B257C9100B84981 /* PhotoFooter.swift in Sources */,
+				579CA90B2B27F14C00B84981 /* Protocols.swift in Sources */,
 				579CA8FF2B26B33700B84981 /* NoteEdit-DrapDrop.swift in Sources */,
 				5723093F2B2410DD00AA92D1 /* PostVC.swift in Sources */,
 				5745B8842B2018FB007A8EE3 /* ViewController.swift in Sources */,
