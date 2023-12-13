@@ -1,10 +1,23 @@
 PODS:
+  - Alamofire (5.8.1)
   - CHTCollectionViewWaterfallLayout/Swift (0.9.10)
+  - GRDB.swift (6.15.1):
+    - GRDB.swift/standard (= 6.15.1)
+  - GRDB.swift/standard (6.15.1)
   - KMPlaceholderTextView (1.4.0)
+  - LeanCloud (17.11.0):
+    - LeanCloud/RTM (= 17.11.0)
+  - LeanCloud/Foundation (17.11.0):
+    - Alamofire (~> 5.7)
+  - LeanCloud/RTM (17.11.0):
+    - GRDB.swift (~> 6.15.0)
+    - LeanCloud/Foundation (= 17.11.0)
+    - SwiftProtobuf (~> 1.22)
   - MBProgressHUD (1.2.0)
   - PryntTrimmerView (4.0.2)
   - SKPhotoBrowser (7.1.0)
   - SteviaLayout (5.1.2)
+  - SwiftProtobuf (1.25.2)
   - XLPagerTabStrip (9.1.0)
   - YPImagePicker (5.2.2):
     - PryntTrimmerView (= 4.0.2)
@@ -13,6 +26,7 @@ PODS:
 DEPENDENCIES:
   - CHTCollectionViewWaterfallLayout/Swift
   - KMPlaceholderTextView (~> 1.4.0)
+  - LeanCloud
   - MBProgressHUD (~> 1.2.0)
   - SKPhotoBrowser
   - XLPagerTabStrip (~> 9.0)
@@ -20,25 +34,33 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - CHTCollectionViewWaterfallLayout
+    - GRDB.swift
     - KMPlaceholderTextView
+    - LeanCloud
     - MBProgressHUD
     - PryntTrimmerView
     - SKPhotoBrowser
     - SteviaLayout
+    - SwiftProtobuf
     - XLPagerTabStrip
     - YPImagePicker
 
 SPEC CHECKSUMS:
+  Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
   CHTCollectionViewWaterfallLayout: b989a459788d7657ac010e03bc0f7eedca95a420
+  GRDB.swift: a6b7e9900aa300d0cbf1f1c5f47b8f32ae51e30c
   KMPlaceholderTextView: 2206c3df39979e9396e2d96fa9f427a8951121b0
+  LeanCloud: 808532530fae85682b1747bf248bb3dc64a37f13
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   PryntTrimmerView: 6a43cc90df5d99addeabd33d4ba09b1365322130
   SKPhotoBrowser: cd95b95a6f352fc2a50992721299f75ead77f9ab
   SteviaLayout: 05424e528d643657d39ce72c786e4adf13cfc5f2
+  SwiftProtobuf: 407a385e97fd206c4fbe880cc84123989167e0d1
   XLPagerTabStrip: 27f3bfe23c53b4251c6481b06b1c289458a3fc1d
   YPImagePicker: afc81b3cffab05a6e7261c5daf80dc31b4e917b4
 
-PODFILE CHECKSUM: 72b0ec88599d96634b4fb220d92c5dc49e305171
+PODFILE CHECKSUM: 83f8d494b46b79176d433a47b31ed8e07c118baa
 
 COCOAPODS: 1.8.4

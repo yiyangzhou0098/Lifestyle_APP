@@ -13,7 +13,7 @@ class ChannelVC: ButtonBarPagerTabStripViewController {
     var PVDelegate: ChannelVCDelegate?
 
     override func viewDidLoad() {
-        settings.style.selectedBarBackgroundColor = UIColor(named: "main1")!
+        settings.style.selectedBarBackgroundColor = mainColor
         settings.style.selectedBarHeight = 2
         settings.style.buttonBarItemBackgroundColor = .clear
         settings.style.buttonBarItemFont = .systemFont(ofSize: 15)

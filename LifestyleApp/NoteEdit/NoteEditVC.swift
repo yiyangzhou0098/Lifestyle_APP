@@ -15,8 +15,15 @@ class NoteEditVC: UIViewController {
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var titleTextField: UITextField!
     
-    var photos = [UIImage(named: "1")!, UIImage(named: "2")!]
+    @IBOutlet weak var channelLabel: UILabel!
+    @IBOutlet weak var channelIcon: UIImageView!
+    @IBOutlet weak var channelPlaceholderLabel: UILabel!
+    
+    var photos = [UIImage]()
     var videoURL: URL?
+    
+    var channel = ""
+    var subChannel = ""
     
     @IBOutlet weak var photoCollectionView: UICollectionView!
     
@@ -45,6 +52,19 @@ class NoteEditVC: UIViewController {
         titleCountLabel.text = String(100 - titleTextField.unwrappedText.count)
     }
     
+    // MARK: Post
+    
+    @IBAction func saveDraftNote(_ sender: Any) {
+    }
+    
+    
+    @IBAction func postNote(_ sender: Any) {
+        guard isValidateNote() else { return }
+        
+        createNote()
+    }
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let channelVC = segue.destination as? ChannelVC {
             channelVC.PVDelegate = self
@@ -54,8 +74,16 @@ class NoteEditVC: UIViewController {
 
 extension NoteEditVC: ChannelVCDelegate {
     func updateChannel(channel: String, subChannel: String) {
-        print("\(subChannel)")
-    }
+        // data passing
+        self.channel = channel
+        self.subChannel = subChannel
+        
+        // UI animated
+        channelLabel.text = subChannel
+        channelIcon.tintColor = blueColor
+        channelLabel.textColor = blueColor
+        channelPlaceholderLabel.isHidden = true
+     }
 }
 
 extension NoteEditVC: UITextFieldDelegate{

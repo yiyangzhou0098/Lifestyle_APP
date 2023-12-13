@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HTv-09-fHC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NSh-nl-Vuy">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
@@ -27,10 +27,10 @@
             </objects>
             <point key="canvasLocation" x="-1062" y="12"/>
         </scene>
-        <!--View Controller-->
+        <!--Login And Me ParentVC-->
         <scene sceneID="yBc-Br-YDu">
             <objects>
-                <viewController id="fbX-bd-aFX" sceneMemberID="viewController">
+                <viewController id="fbX-bd-aFX" customClass="LoginAndMeParentVC" customModule="LifestyleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hXf-o2-Elp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,7 +41,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U25-cK-ctD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="816" y="1017"/>
+            <point key="canvasLocation" x="815" y="1184"/>
+        </scene>
+        <!--MeVC-->
+        <scene sceneID="V1d-9U-fgA">
+            <objects>
+                <viewController storyboardIdentifier="MeVCID" id="fOX-7Z-geT" customClass="MeVC" customModule="LifestyleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ylo-jP-61x">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Rgg-I4-k13"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="io2-r5-BZq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1521" y="1184"/>
         </scene>
         <!--DiscoveryVC-->
         <scene sceneID="Yow-bo-6Ix">
@@ -561,10 +576,47 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="E3W-T8-0zn"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="LrR-QU-kRF"/>
                             </scrollView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="L0c-Ll-bhe">
+                                <rect key="frame" x="16" y="734" width="343" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXU-fi-hH6">
+                                        <rect key="frame" x="0.0" y="0.0" width="105" height="44"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                        <state key="normal" title="Save#TODO">
+                                            <color key="titleColor" systemColor="secondaryLabelColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="saveDraftNote:" destination="HTv-09-fHC" eventType="touchUpInside" id="lhJ-Tu-Hex"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KpB-1b-lC4">
+                                        <rect key="frame" x="121" y="0.0" width="222" height="44"/>
+                                        <color key="backgroundColor" name="main1"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <state key="normal" title="Publish Now">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                <real key="value" value="22"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="postNote:" destination="HTv-09-fHC" eventType="touchUpInside" id="Htb-5l-qMH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="SmY-6F-4Tx"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oDx-qd-0vt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="oDx-qd-0vt" firstAttribute="trailing" secondItem="L0c-Ll-bhe" secondAttribute="trailing" constant="16" id="50l-7q-SK2"/>
+                            <constraint firstItem="L0c-Ll-bhe" firstAttribute="leading" secondItem="Iqq-Lr-5g1" secondAttribute="leading" constant="16" id="ANF-tC-826"/>
+                            <constraint firstItem="oDx-qd-0vt" firstAttribute="bottom" secondItem="L0c-Ll-bhe" secondAttribute="bottom" id="Rrp-BD-7nr"/>
                             <constraint firstItem="ELt-XC-eYF" firstAttribute="leading" secondItem="oDx-qd-0vt" secondAttribute="leading" id="hPa-w8-rqY"/>
                             <constraint firstItem="ELt-XC-eYF" firstAttribute="top" secondItem="oDx-qd-0vt" secondAttribute="top" id="mtG-5x-zEi"/>
                             <constraint firstAttribute="bottom" secondItem="ELt-XC-eYF" secondAttribute="bottom" id="tx1-Uq-JcV"/>
@@ -572,6 +624,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="channelIcon" destination="Wct-kl-D9f" id="BEP-ub-5Kw"/>
+                        <outlet property="channelLabel" destination="Qvm-md-h2A" id="MhM-2b-vdy"/>
+                        <outlet property="channelPlaceholderLabel" destination="fun-pr-7Mh" id="Jdt-wd-DiW"/>
                         <outlet property="photoCollectionView" destination="ffW-sc-Euf" id="oFC-xj-G43"/>
                         <outlet property="textView" destination="DEa-ZY-32P" id="eq3-qd-xUT"/>
                         <outlet property="titleCountLabel" destination="pJo-FP-saQ" id="0fE-Oa-Zb2"/>

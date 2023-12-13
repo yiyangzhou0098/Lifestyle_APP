@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreData
+import LeanCloud
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        config()
         return true
     }
 
@@ -79,3 +81,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate {
+    private func config() {
+        // UI
+        UINavigationBar.appearance().tintColor = .label
+        
+        // leanCloud
+        LCApplication.logLevel = .off
+        do {
+            print("LeanCloud loaded")
+            try LCApplication.default.set(id: kLCAppID, key: kLCAppKey, serverURL: kLCServerURL)
+        } catch {
+            print("LeanCloud load Error")
+        }
+        
+    }
+}

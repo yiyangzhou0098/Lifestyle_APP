@@ -42,6 +42,3 @@ extension UIViewController {
     }
 }
 
-extension UITextField {
-    var unwrappedText: String { text ?? ""}
-}

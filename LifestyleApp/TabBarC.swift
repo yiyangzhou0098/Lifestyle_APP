@@ -9,17 +9,18 @@ import UIKit
 import YPImagePicker
 
 class TabBarC : UITabBarController, UITabBarControllerDelegate {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         delegate = self
     }
     
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+        
         if viewController is PostVC {
             
-            // TODO: login
+            // TODO: check login status
             
             // MARK: picker configurate
             var config = YPImagePickerConfiguration()
@@ -43,24 +44,33 @@ class TabBarC : UITabBarController, UITabBarControllerDelegate {
             let picker = YPImagePicker(configuration: config)
             picker.didFinishPicking {[unowned picker] items, cancelled in
                 if cancelled {
+                    picker.dismiss(animated: true)
+                } else {
+                    var photos: [UIImage] = []
+                    var videoURL: URL?
                     
-                }
-                    
-                for item in items {
-                    switch item {
-                    case let .photo(p: photo):
-                        print(photo)
-                    case .video(let video):
-                        print(video)
+                    for item in items {
+                        switch item {
+                        case let .photo(p: photo):
+                            photos.append(photo.image)
+                        case .video:
+                            let url = URL(fileURLWithPath: "recordedVideoRAW.mov", relativeTo: FileManager.default.temporaryDirectory)
+                            photos.append(url.thumbnail)
+                            videoURL = url
+                        }
                     }
+                    let vc = self.storyboard!.instantiateViewController(identifier: kNoteEditVCID) as! NoteEditVC
+                    vc.photos = photos
+                    vc.videoURL = videoURL
+                    picker.pushViewController(vc, animated: true)
                 }
-                picker.dismiss(animated: true, completion: nil)
             }
             present(picker, animated: true, completion: nil)
-
+        } else {
             return false
         }
         return true
     }
-    
 }
+
+    
