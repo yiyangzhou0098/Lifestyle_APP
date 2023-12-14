@@ -40,8 +40,9 @@ let kCommentSectionFooterViewID = "CommentSectionFooterViewID"
 let kWaterfallVCID = "WaterfallVCID"
 let kWaterfallCellID = "WaterfallCellId"
 let kWaterfallPadding = CGFloat(4)
+let kWaterfallCellBottomViewH: CGFloat = 64
 
-let kChannels = ["For you", "Trip", "Fun", "Creative", "Cook", "Pet", "Indoor"]
+let kChannels = ["Recommend", "Trip", "Fun", "Creative", "Cook", "Pet", "Indoor"]
 
 // MARK: YPImagePicker
 let kMaxCameraZoomFactor: CGFloat = 3
@@ -67,7 +68,8 @@ let kReplyTable = "Reply"
 let kUserInfoTable = "UserInfo"
 
 // User
-let kNickNameCol = "nickName"
+//let kNickNameCol = "nickName"
+let kNickNameCol = "username"
 let kAvatarCol = "avatar"
 let kGenderCol = "gender"
 let kIntroCol = "intro"
@@ -107,20 +109,24 @@ let kReplyToUserCol = "replyToUser"
 // UserInfo
 let kUserObjectIdCol = "userObjectId"
 
+// Logic
+let kNotesOffset = 10
+
+// UI layout
+let screenRect = UIScreen.main.bounds
 
 
 let kMaxNoteTitleCount = 100
 let kMaxNoteTextCount = 3000
 
 let kAllSubChannels = [
-    ["a", "b", "b", "d"],
-    ["e", "f", "g"],
-    ["h", "i"],
-    ["j", "k", "l", "m", "n"],
-    ["o", "p"],
-    ["q", "r"],
-    ["s", "t"], 
-    ["u", "v", "w"]
+    ["Recommend", "b", "b", "d"],
+    ["Trip", "f", "g"],
+    ["Fun", "i"],
+    ["Creative", "k", "l", "m", "n"],
+    ["Cook", "p"],
+    ["Pet", "r"],
+    ["Indoor", "t"]
 ]
 
 let blueColor = UIColor(named: "main1")!

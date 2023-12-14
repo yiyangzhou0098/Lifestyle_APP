@@ -67,6 +67,7 @@ class NoteEditVC: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let channelVC = segue.destination as? ChannelVC {
+            view.endEditing(true)
             channelVC.PVDelegate = self
         }
     }

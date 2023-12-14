@@ -87,7 +87,7 @@ extension AppDelegate {
         UINavigationBar.appearance().tintColor = .label
         
         // leanCloud
-        LCApplication.logLevel = .off
+        LCApplication.logLevel = .debug
         do {
             print("LeanCloud loaded")
             try LCApplication.default.set(id: kLCAppID, key: kLCAppKey, serverURL: kLCServerURL)

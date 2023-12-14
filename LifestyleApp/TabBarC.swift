@@ -66,10 +66,14 @@ class TabBarC : UITabBarController, UITabBarControllerDelegate {
                 }
             }
             present(picker, animated: true, completion: nil)
-        } else {
+            
             return false
         }
         return true
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
     }
 }
 

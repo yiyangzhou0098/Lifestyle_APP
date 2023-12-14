@@ -7,6 +7,7 @@
 
 import UIKit
 import AVFoundation
+import DateToolsSwift
 
 extension String{
     var isBlank: Bool{ self.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty }
@@ -50,6 +51,31 @@ extension URL{
             return thumbnail
         } catch {
             return imagePH
+        }
+    }
+}
+
+extension Date{
+    //5 format of date:
+    //1.Just now 5 mins ago;2.Today 21:10;3.Yesterday 21:10;4.09-15;5.2019-09-15
+    var formattedDate: String{
+        let currentYear = Date().year
+        if year == currentYear{
+            if isToday{
+                if minutesAgo > 10{//note posted more than 10 mins
+                    return "Today \(format(with: "HH:mm"))"
+                }else{
+                    return timeAgoSinceNow
+                }
+            }else if isYesterday{//Yesterday
+                return "Yesterday \(format(with: "HH:mm"))"
+            }else{//the  day before yesterday
+                return format(with: "MM-dd")
+            }
+        }else if year < currentYear{//last year or older
+            return format(with: "yyyy-MM-dd")
+        }else{
+            return "Not use"
         }
     }
 }

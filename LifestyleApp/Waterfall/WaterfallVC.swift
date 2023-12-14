@@ -7,14 +7,19 @@
 
 import UIKit
 import CHTCollectionViewWaterfallLayout
+import LeanCloud
 import XLPagerTabStrip
+import SegementSlide
 
-class WaterfallVC: UICollectionViewController {
+class WaterfallVC: UICollectionViewController, SegementSlideContentScrollViewDelegate {
 
     var channel = ""
+    var notes: [LCObject] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        getNotes()
 
         let layout = collectionView.collectionViewLayout as! CHTCollectionViewWaterfallLayout
         layout.columnCount = 2
@@ -23,47 +28,24 @@ class WaterfallVC: UICollectionViewController {
         layout.sectionInset = UIEdgeInsets(top: 0, left: kWaterfallPadding, bottom: kWaterfallPadding, right: kWaterfallPadding)
         
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-    // MARK: UICollectionViewDataSource
-
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
-    }
-
-
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
-        return 13
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kWaterfallCellID, for: indexPath) as! WaterfallCell
     
-        // Configure the cell
-        cell.imageView.image = UIImage(named: "\(indexPath.item + 1)")
-    
-        return cell
-    }
-
 }
-
 
 // MARK: - CHT layout
 extension WaterfallVC: CHTCollectionViewDelegateWaterfallLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        UIImage(named: "\(indexPath.item + 1)")!.size
+        // test photos
+//        UIImage(named: "\(indexPath.item + 1)")!.size
+        
+        
+        let cellW = (screenRect.width - kWaterfallPadding * 3) / 2
+        var cellH: CGFloat = 0
+        let note = notes[indexPath.item]
+        let coverPhotoRatio = CGFloat(note.getExactDoubelVal(kCoverPhotoRatioCol))
+        cellH = cellW * coverPhotoRatio + kWaterfallCellBottomViewH
+        
+        return CGSize(width: cellW, height: cellH)
     }
 }
 
@@ -72,3 +54,6 @@ extension WaterfallVC: IndicatorInfoProvider {
         IndicatorInfo(title: channel)
     }
 }
+
+
+

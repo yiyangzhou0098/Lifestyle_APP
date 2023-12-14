@@ -24,7 +24,6 @@ class LoginAndMeParentVC: UIViewController {
             // MARK: TODO Not implemented login pages
 //            let loginVC = storyboard?.storyboard?.instantiateViewController(identifier: kLoginVCID)
 //            add(child: loginVC)
-            print("Not login")
             let meVC = storyboard!.instantiateViewController(identifier: kMeVCID)
             add(child: meVC)
         }

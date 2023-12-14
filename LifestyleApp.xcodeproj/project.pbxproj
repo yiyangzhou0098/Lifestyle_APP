@@ -13,10 +13,14 @@
 		5723093F2B2410DD00AA92D1 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5723093E2B2410DD00AA92D1 /* PostVC.swift */; };
 		572309412B25397D00AA92D1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572309402B25397D00AA92D1 /* Extensions.swift */; };
 		572309432B254CF000AA92D1 /* NoteEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572309422B254CF000AA92D1 /* NoteEditVC.swift */; };
+		57258E0A2B296B3D00F8B099 /* NoteDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57258E092B296B3D00F8B099 /* NoteDetailVC.swift */; };
+		57258E102B296D3100F8B099 /* NoteDetailVC-UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57258E0F2B296D3100F8B099 /* NoteDetailVC-UI.swift */; };
+		57258E122B297E3C00F8B099 /* CustomViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57258E112B297E3C00F8B099 /* CustomViews.swift */; };
+		57258E132B2987B200F8B099 /* NoteDetailVC-Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57258E0D2B296D1F00F8B099 /* NoteDetailVC-Config.swift */; };
+		57258E142B2987E300F8B099 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5745B8852B2018FB007A8EE3 /* Main.storyboard */; };
 		5745B8802B2018FB007A8EE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5745B87F2B2018FB007A8EE3 /* AppDelegate.swift */; };
 		5745B8822B2018FB007A8EE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5745B8812B2018FB007A8EE3 /* SceneDelegate.swift */; };
 		5745B8842B2018FB007A8EE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5745B8832B2018FB007A8EE3 /* ViewController.swift */; };
-		5745B8872B2018FB007A8EE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5745B8852B2018FB007A8EE3 /* Main.storyboard */; };
 		5745B88A2B2018FB007A8EE3 /* LifestyleApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5745B8882B2018FB007A8EE3 /* LifestyleApp.xcdatamodeld */; };
 		5745B88C2B2018FC007A8EE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5745B88B2B2018FC007A8EE3 /* Assets.xcassets */; };
 		5745B88F2B2018FC007A8EE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5745B88D2B2018FC007A8EE3 /* LaunchScreen.storyboard */; };
@@ -44,6 +48,9 @@
 		579CA9092B27CC4000B84981 /* ChannelTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579CA9082B27CC4000B84981 /* ChannelTableVC.swift */; };
 		579CA90B2B27F14C00B84981 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579CA90A2B27F14C00B84981 /* Protocols.swift */; };
 		579CA90D2B2832A900B84981 /* NoteEditVC-Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579CA90C2B2832A900B84981 /* NoteEditVC-Helper.swift */; };
+		57D24FBD2B2A5BD000DDE72A /* WaterfallVC-DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D24FBC2B2A5BD000DDE72A /* WaterfallVC-DataSource.swift */; };
+		57D24FBF2B2A5CF600DDE72A /* WaterfallVC-LoadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D24FBE2B2A5CF600DDE72A /* WaterfallVC-LoadData.swift */; };
+		57D24FC52B2AAE2A00DDE72A /* WaterfallVC-Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D24FC42B2AAE2A00DDE72A /* WaterfallVC-Delegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +60,10 @@
 		5723093E2B2410DD00AA92D1 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
 		572309402B25397D00AA92D1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		572309422B254CF000AA92D1 /* NoteEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEditVC.swift; sourceTree = "<group>"; };
+		57258E092B296B3D00F8B099 /* NoteDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteDetailVC.swift; sourceTree = "<group>"; };
+		57258E0D2B296D1F00F8B099 /* NoteDetailVC-Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-Config.swift"; sourceTree = "<group>"; };
+		57258E0F2B296D3100F8B099 /* NoteDetailVC-UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-UI.swift"; sourceTree = "<group>"; };
+		57258E112B297E3C00F8B099 /* CustomViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViews.swift; sourceTree = "<group>"; };
 		5745B87C2B2018FB007A8EE3 /* LifestyleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifestyleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5745B87F2B2018FB007A8EE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5745B8812B2018FB007A8EE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +98,10 @@
 		579CA9082B27CC4000B84981 /* ChannelTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelTableVC.swift; sourceTree = "<group>"; };
 		579CA90A2B27F14C00B84981 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		579CA90C2B2832A900B84981 /* NoteEditVC-Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-Helper.swift"; sourceTree = "<group>"; };
+		57D24FBC2B2A5BD000DDE72A /* WaterfallVC-DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WaterfallVC-DataSource.swift"; sourceTree = "<group>"; };
+		57D24FBE2B2A5CF600DDE72A /* WaterfallVC-LoadData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WaterfallVC-LoadData.swift"; sourceTree = "<group>"; };
+		57D24FC32B2A914A00DDE72A /* avatarPH.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = avatarPH.jpg; sourceTree = "<group>"; };
+		57D24FC42B2AAE2A00DDE72A /* WaterfallVC-Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WaterfallVC-Delegate.swift"; sourceTree = "<group>"; };
 		6189605DE1603E74759A3352 /* Pods_LifestyleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifestyleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B08B328704528581F670892 /* Pods-LifestyleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifestyleApp.release.xcconfig"; path = "Target Support Files/Pods-LifestyleApp/Pods-LifestyleApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,6 +122,9 @@
 			isa = PBXGroup;
 			children = (
 				5745B8A22B22ED21007A8EE3 /* WaterfallVC.swift */,
+				57D24FC42B2AAE2A00DDE72A /* WaterfallVC-Delegate.swift */,
+				57D24FBE2B2A5CF600DDE72A /* WaterfallVC-LoadData.swift */,
+				57D24FBC2B2A5BD000DDE72A /* WaterfallVC-DataSource.swift */,
 				5745B8A42B22F306007A8EE3 /* WaterfallCell.swift */,
 			);
 			path = Waterfall;
@@ -122,6 +140,7 @@
 				578F078F2B28F5E900EC8158 /* UIView-Extensions.swift */,
 				578F07912B28F64E00EC8158 /* Basic-Extensions.swift */,
 				578F07932B28F9C800EC8158 /* LC-Extensions.swift */,
+				57258E112B297E3C00F8B099 /* CustomViews.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -149,6 +168,7 @@
 		5745B87E2B2018FB007A8EE3 /* LifestyleApp */ = {
 			isa = PBXGroup;
 			children = (
+				57D24FC22B2A914A00DDE72A /* Resources */,
 				5745B87F2B2018FB007A8EE3 /* AppDelegate.swift */,
 				5745B8812B2018FB007A8EE3 /* SceneDelegate.swift */,
 				5745B8832B2018FB007A8EE3 /* ViewController.swift */,
@@ -157,6 +177,7 @@
 				5723093E2B2410DD00AA92D1 /* PostVC.swift */,
 				578F078C2B28E91200EC8158 /* Me */,
 				579CA8FC2B25824400B84981 /* NoteEdit */,
+				578F07992B29482100EC8158 /* NoteDetail */,
 				572309382B23FEEF00AA92D1 /* Waterfall */,
 				5745B8A02B229F5D007A8EE3 /* Home */,
 				572309392B23FF0200AA92D1 /* Common */,
@@ -189,6 +210,16 @@
 			path = Me;
 			sourceTree = "<group>";
 		};
+		578F07992B29482100EC8158 /* NoteDetail */ = {
+			isa = PBXGroup;
+			children = (
+				57258E092B296B3D00F8B099 /* NoteDetailVC.swift */,
+				57258E0D2B296D1F00F8B099 /* NoteDetailVC-Config.swift */,
+				57258E0F2B296D3100F8B099 /* NoteDetailVC-UI.swift */,
+			);
+			path = NoteDetail;
+			sourceTree = "<group>";
+		};
 		579CA8FC2B25824400B84981 /* NoteEdit */ = {
 			isa = PBXGroup;
 			children = (
@@ -204,6 +235,14 @@
 				579CA9082B27CC4000B84981 /* ChannelTableVC.swift */,
 			);
 			path = NoteEdit;
+			sourceTree = "<group>";
+		};
+		57D24FC22B2A914A00DDE72A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				57D24FC32B2A914A00DDE72A /* avatarPH.jpg */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		A9994341F4D357FC4F51463D /* Frameworks */ = {
@@ -284,10 +323,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				579CA9052B27B3D100B84981 /* TODO.txt in Resources */,
+				57258E142B2987E300F8B099 /* Main.storyboard in Resources */,
 				5745B88F2B2018FC007A8EE3 /* LaunchScreen.storyboard in Resources */,
 				5745B88C2B2018FC007A8EE3 /* Assets.xcassets in Resources */,
 				5723093B2B24004D00AA92D1 /* README.md in Resources */,
-				5745B8872B2018FB007A8EE3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,12 +381,16 @@
 			files = (
 				579CA8FB2B257C9100B84981 /* PhotoFooter.swift in Sources */,
 				578F07892B28E8DD00EC8158 /* LoginAndMeParentVC.swift in Sources */,
+				57258E122B297E3C00F8B099 /* CustomViews.swift in Sources */,
 				579CA90B2B27F14C00B84981 /* Protocols.swift in Sources */,
 				579CA8FF2B26B33700B84981 /* NoteEdit-DrapDrop.swift in Sources */,
 				5723093F2B2410DD00AA92D1 /* PostVC.swift in Sources */,
 				579CA90D2B2832A900B84981 /* NoteEditVC-Helper.swift in Sources */,
 				578F07942B28F9C800EC8158 /* LC-Extensions.swift in Sources */,
+				57258E132B2987B200F8B099 /* NoteDetailVC-Config.swift in Sources */,
 				5745B8842B2018FB007A8EE3 /* ViewController.swift in Sources */,
+				57D24FC52B2AAE2A00DDE72A /* WaterfallVC-Delegate.swift in Sources */,
+				57D24FBD2B2A5BD000DDE72A /* WaterfallVC-DataSource.swift in Sources */,
 				572309432B254CF000AA92D1 /* NoteEditVC.swift in Sources */,
 				578F07902B28F5E900EC8158 /* UIView-Extensions.swift in Sources */,
 				5745B8992B21A31C007A8EE3 /* FollowVC.swift in Sources */,
@@ -355,6 +398,7 @@
 				5745B8972B219883007A8EE3 /* HomeVC.swift in Sources */,
 				5745B89D2B21A345007A8EE3 /* NearByVC.swift in Sources */,
 				5745B8802B2018FB007A8EE3 /* AppDelegate.swift in Sources */,
+				57258E0A2B296B3D00F8B099 /* NoteDetailVC.swift in Sources */,
 				5745B89B2B21A32F007A8EE3 /* DiscoveryVC.swift in Sources */,
 				578F07962B2944D800EC8158 /* NoteEditVC-Note.swift in Sources */,
 				5723093D2B240D0500AA92D1 /* TabBarC.swift in Sources */,
@@ -371,6 +415,8 @@
 				5745B89F2B229D43007A8EE3 /* Constants.swift in Sources */,
 				572309412B25397D00AA92D1 /* Extensions.swift in Sources */,
 				578F07922B28F64E00EC8158 /* Basic-Extensions.swift in Sources */,
+				57258E102B296D3100F8B099 /* NoteDetailVC-UI.swift in Sources */,
+				57D24FBF2B2A5CF600DDE72A /* WaterfallVC-LoadData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

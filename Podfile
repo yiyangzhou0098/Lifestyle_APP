@@ -13,5 +13,12 @@ target 'LifestyleApp' do
   pod 'SKPhotoBrowser'
   pod 'KMPlaceholderTextView', '~> 1.4.0'
   pod 'LeanCloud'
+  pod 'DateToolsSwift'
+  pod 'FaveButton'
+  pod 'ImageSlideshow', '~> 1.9.0'
+  pod 'Kingfisher', '~> 6.0'
+  pod 'GrowingTextView', '0.7.2'
+  pod "ImageSlideshow/Kingfisher"
+  pod 'SegementSlide', '3.0.1'
 
 end
