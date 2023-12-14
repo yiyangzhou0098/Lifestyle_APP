@@ -11,7 +11,7 @@ import LeanCloud
 extension WaterfallVC {
     
     // Get all Notes from cloud
-    func getNotes(){
+    @objc func getNotes(){
         let query = LCQuery(className: kNoteTable)
         
         
@@ -28,9 +28,9 @@ extension WaterfallVC {
                     self.collectionView.reloadData()
                 }
             }
-//            DispatchQueue.main.async {
-//                self.header.endRefreshing()
-//            }
+            DispatchQueue.main.async {
+                self.header.endRefreshing()
+            }
         }
     }
 }

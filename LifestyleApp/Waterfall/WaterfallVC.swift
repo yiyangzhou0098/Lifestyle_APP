@@ -10,8 +10,12 @@ import CHTCollectionViewWaterfallLayout
 import LeanCloud
 import XLPagerTabStrip
 import SegementSlide
+import MJRefresh
 
 class WaterfallVC: UICollectionViewController, SegementSlideContentScrollViewDelegate {
+    
+    lazy var header = MJRefreshNormalHeader()
+    @objc var scrollView: UIScrollView { collectionView }
 
     var channel = ""
     var notes: [LCObject] = []
@@ -19,7 +23,10 @@ class WaterfallVC: UICollectionViewController, SegementSlideContentScrollViewDel
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        getNotes()
+        config()
+        // Homepage:
+        header.setRefreshingTarget(self, refreshingAction: #selector(getNotes))
+        header.beginRefreshing()
 
         let layout = collectionView.collectionViewLayout as! CHTCollectionViewWaterfallLayout
         layout.columnCount = 2

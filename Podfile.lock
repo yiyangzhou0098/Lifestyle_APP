@@ -24,6 +24,7 @@ PODS:
     - LeanCloud/Foundation (= 17.11.0)
     - SwiftProtobuf (~> 1.22)
   - MBProgressHUD (1.2.0)
+  - MJRefresh (3.7.6)
   - PryntTrimmerView (4.0.2)
   - SegementSlide (3.0.1)
   - SKPhotoBrowser (7.1.0)
@@ -45,6 +46,7 @@ DEPENDENCIES:
   - KMPlaceholderTextView (~> 1.4.0)
   - LeanCloud
   - MBProgressHUD (~> 1.2.0)
+  - MJRefresh
   - SegementSlide (= 3.0.1)
   - SKPhotoBrowser
   - XLPagerTabStrip (~> 9.0)
@@ -63,6 +65,7 @@ SPEC REPOS:
     - KMPlaceholderTextView
     - LeanCloud
     - MBProgressHUD
+    - MJRefresh
     - PryntTrimmerView
     - SegementSlide
     - SKPhotoBrowser
@@ -83,6 +86,7 @@ SPEC CHECKSUMS:
   KMPlaceholderTextView: 2206c3df39979e9396e2d96fa9f427a8951121b0
   LeanCloud: 808532530fae85682b1747bf248bb3dc64a37f13
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJRefresh: 2fe7fb43a5167ceda20bb7e63f130c04fd1814a5
   PryntTrimmerView: 6a43cc90df5d99addeabd33d4ba09b1365322130
   SegementSlide: 83b56ffb66b9c0edc4e4f2a74229309c62915db3
   SKPhotoBrowser: cd95b95a6f352fc2a50992721299f75ead77f9ab
@@ -91,6 +95,6 @@ SPEC CHECKSUMS:
   XLPagerTabStrip: 27f3bfe23c53b4251c6481b06b1c289458a3fc1d
   YPImagePicker: afc81b3cffab05a6e7261c5daf80dc31b4e917b4
 
-PODFILE CHECKSUM: 7e405dc4e2d6b89568b56845b7f1bc7fb05c6d6e
+PODFILE CHECKSUM: e58366c4e2aa6cb805d7be1f197447b2ff3dc453
 
 COCOAPODS: 1.8.4
