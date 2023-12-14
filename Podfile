@@ -21,5 +21,6 @@ target 'LifestyleApp' do
   pod "ImageSlideshow/Kingfisher"
   pod 'SegementSlide', '3.0.1'
   pod 'MJRefresh'
-
+  pod 'GrowingTextView', '0.7.2'
+  
 end

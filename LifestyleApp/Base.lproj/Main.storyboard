@@ -1017,6 +1017,9 @@
                                                                     <real key="value" value="18"/>
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <action selector="comment:" destination="tML-4b-uV1" eventType="touchUpInside" id="JSg-Vi-YD4"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                 </stackView>
@@ -1175,6 +1178,9 @@
                                                         <real key="value" value="18"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="comment:" destination="tML-4b-uV1" eventType="touchUpInside" id="bcu-4g-Qmt"/>
+                                                </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="k2R-ec-oq6">
                                                 <rect key="frame" x="156.33333333333334" y="0.0" width="130.00000000000003" height="36"/>
@@ -1252,6 +1258,9 @@
                                                     <imageReference key="image" image="message" catalog="system" symbolScale="small"/>
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="22"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="comment:" destination="tML-4b-uV1" eventType="touchUpInside" id="qbD-wj-R6d"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -1271,7 +1280,7 @@
                                 <rect key="frame" x="0.0" y="756" width="375" height="56"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gog-IU-bDh" customClass="GrowingTextView" customModule="GrowingTextView">
-                                        <rect key="frame" x="16" y="8" width="271" height="40"/>
+                                        <rect key="frame" x="16" y="8" width="267" height="40"/>
                                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -1286,20 +1295,20 @@
                                             <userDefinedRuntimeAttribute type="number" keyPath="maxHeight">
                                                 <real key="value" value="90"/>
                                             </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="精彩评论将被优先展示哦"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Send comments"/>
                                             <userDefinedRuntimeAttribute type="number" keyPath="radius">
                                                 <real key="value" value="20"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlP-bq-TdN">
-                                        <rect key="frame" x="295" y="8" width="64" height="40"/>
-                                        <color key="backgroundColor" name="main"/>
+                                        <rect key="frame" x="291" y="8" width="68" height="40"/>
+                                        <color key="backgroundColor" name="main1"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="P65-ZT-1nV"/>
                                         </constraints>
                                         <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
-                                        <state key="normal" title="Sent">
+                                        <state key="normal" title="Send">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -1360,6 +1369,9 @@
                         <outlet property="tableHeaderView" destination="NDs-7k-tRJ" id="j2W-vP-dod"/>
                         <outlet property="tableView" destination="ycO-nU-MuX" id="OUw-e6-XqX"/>
                         <outlet property="textLabel" destination="8Jp-kt-GAF" id="Ggc-wg-8sY"/>
+                        <outlet property="textView" destination="gog-IU-bDh" id="Eed-T6-i15"/>
+                        <outlet property="textViewBarBottomConstraint" destination="9jj-E0-GyH" id="Yud-eI-iCg"/>
+                        <outlet property="textViewBarView" destination="2Mp-4K-FyF" id="ajC-AJ-heq"/>
                         <outlet property="titleLabel" destination="jww-Zp-0pG" id="jz8-AT-9lg"/>
                     </connections>
                 </viewController>
@@ -1388,13 +1400,13 @@
     </scenes>
     <designables>
         <designable name="HPS-ui-iI5">
-            <size key="intrinsicContentSize" width="102" height="30"/>
+            <size key="intrinsicContentSize" width="118" height="18"/>
         </designable>
         <designable name="gog-IU-bDh">
             <size key="intrinsicContentSize" width="-1" height="30"/>
         </designable>
         <designable name="joc-dS-szt">
-            <size key="intrinsicContentSize" width="99.333333333333329" height="20.333333333333332"/>
+            <size key="intrinsicContentSize" width="115.33333333333333" height="20.333333333333332"/>
         </designable>
     </designables>
     <resources>
@@ -1419,9 +1431,6 @@
         <image name="yp_iconCrop" width="40" height="40"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="main">
-            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="main1">
             <color red="0.54117647058823526" green="0.16862745098039217" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

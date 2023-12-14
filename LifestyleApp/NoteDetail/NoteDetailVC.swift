@@ -15,6 +15,13 @@ class NoteDetailVC: UIViewController {
     
     let note: LCObject
     
+    var comments: [LCObject] = []
+    
+    var isReply = false //Determin to comment or reply
+    var commentSection = 0 //find which comment user reply to
+    
+    var replyToUser: LCUser?
+    
     @IBOutlet weak var authorAvatarBtn: UIButton!
     @IBOutlet weak var authorNickNameBtn: UIButton!
     @IBOutlet weak var followBtn: UIButton!
@@ -31,7 +38,7 @@ class NoteDetailVC: UIViewController {
     @IBOutlet weak var avatarImageView: UIImageView!
     @IBOutlet weak var tableView: UITableView!
     
-    //下方bar(点赞收藏评论)
+    // Down bar(like, fav, comments)
     @IBOutlet weak var likeBtn: FaveButton!
     @IBOutlet weak var likeCountLabel: UILabel!
     @IBOutlet weak var favBtn: FaveButton!
@@ -59,10 +66,6 @@ class NoteDetailVC: UIViewController {
         super.viewDidLoad()
         
         config()
-        
-        
-        
-        
         setUI()
     }
     
@@ -73,8 +76,15 @@ class NoteDetailVC: UIViewController {
         adjustTableHeaderViewHeight()
     }
     
-
     @IBAction func back(_ sender: Any) {
         dismiss(animated: true)
     }
+    
+    @IBAction func comment(_ sender: Any) {
+        // TODO: check login
+        comment()
+    }
+    
 }
+
+

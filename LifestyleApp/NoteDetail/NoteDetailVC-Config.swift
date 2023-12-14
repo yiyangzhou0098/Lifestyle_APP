@@ -6,6 +6,7 @@
 //
 
 import ImageSlideshow
+import GrowingTextView
 import LeanCloud
 
 extension NoteDetailVC{
@@ -20,6 +21,11 @@ extension NoteDetailVC{
         pageControl.pageIndicatorTintColor = .systemGray
         pageControl.currentPageIndicatorTintColor = mainColor
         imageSlideshow.pageIndicator = pageControl
+        
+        // textVIew (GrowingTextView height 33 will be vertical center. Now is 40 so up and down add 3.5 and add 8
+        textView.textContainerInset = UIEdgeInsets(top: 11.5, left: 16, bottom: 11.5, right: 16)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChangeFrame), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
     }
     
     func adjustTableHeaderViewHeight(){
@@ -32,6 +38,28 @@ extension NoteDetailVC{
         if frame.height != height{
             frame.size.height = height//替换成实际height
             tableHeaderView.frame = frame//重新赋值frame,即可改变tableHeaderView的布局(实际就是改变height)
+        }
+    }
+}
+
+// Listener
+extension NoteDetailVC{
+    @objc private func keyboardWillChangeFrame(_ notification: Notification){
+        if let endFrame = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue{
+            // Keyboard current height
+            // screen hight - keyboard helght
+            let keyboardH = screenRect.height - endFrame.origin.y
+            
+            if keyboardH > 0{
+//                view.insertSubview(overlayView, belowSubview: textViewBarView)//Add a black transparent mask
+            }else{
+//                overlayView.removeFromSuperview()//Remove black transparent mask
+                textViewBarView.isHidden = true
+            }
+            
+            textViewBarBottomConstraint.constant = -keyboardH
+            // refresh view when constraint change
+            view.layoutIfNeeded()
         }
     }
 }

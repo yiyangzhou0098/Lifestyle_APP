@@ -10,9 +10,12 @@ import Foundation
 extension NoteEditVC {
     
     func config() {
+        hideKeyBoardWhenTapperAround()
+        
         photoCollectionView.dragInteractionEnabled = true
         
         // Remove textfield insets spacing
+        let lineFragmentPadding = textView.textContainer.lineFragmentPadding
         textView.textContainerInset = UIEdgeInsets(top: 0, left: -textView.textContainer.lineFragmentPadding, bottom: 0, right: -textView.textContainer.lineFragmentPadding)
         
         let paragraphStyle = NSMutableParagraphStyle()
@@ -23,7 +26,8 @@ extension NoteEditVC {
             .foregroundColor: UIColor.secondaryLabel
         ]
         textView.typingAttributes = typingAttributes
+        textView.tintColorDidChange()
         
-//        textView.tintColorDidChange()
+        
     }
 }

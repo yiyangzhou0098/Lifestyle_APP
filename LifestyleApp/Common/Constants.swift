@@ -133,3 +133,5 @@ let blueColor = UIColor(named: "main1")!
 let mainColor = UIColor(named: "main1")!
 
 let imagePH = UIImage(named: "imagePH")!
+
+let kNoteCommentPH = "Send comments!"
