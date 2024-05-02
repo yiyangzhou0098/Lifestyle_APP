@@ -1,5 +1,13 @@
 ## Lifestyle IOS App
 
+### 
+- A Swift5 + UIkit based IOS app.
+- Database: CoreData for user script local persistence while using NoSQL LeanCloud for user public data persistence.
+- All UI designs using storybroad. Managed to solve complicated views design by utilizing stackview for example: cohesive design of various elements, accommodating both horizontal and vertical arrangements seamlessly. The versatility of stack views proved instrumental in enhancing the app's overall visual coherence and simplicity of design implementation.
+<p align="center"><img src="https://github.com/yiyangzhou0098/Lifestyle_IOS_Demo/assets/39185325/516046b4-a8c7-424c-8d31-fc3e8457aed6" height="180" /></p>
+
+
+
 ### Homepage
 Display previews of users' posts. The visually pleasing waterfall layout is achieved through the implementation of CHTCollectionViewWaterfallLayout/Swift. 
 
